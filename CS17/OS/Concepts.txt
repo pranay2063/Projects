@@ -1,2 +1,0 @@
-
-System Call - https://www.geeksforgeeks.org/operating-system-introduction-system-call/
