@@ -1,0 +1,11 @@
+
+1. Structures 
+2. Class - Data + Functions
+3. OOPS - (Modelling real world problems, data is critical element)
+4. Features - Encapsulation, Polymorphism, Abstraction, Inheritance
+5. Encapsulation - Binding together data elements and functions
+6. Polymorphism - Ability of an object/entity to take multiple forms (Compile time, Runtime Polymorphism)
+7. Abstraction - Showing necessary details by hiding background implementation
+8. Inheritance - Using already existing functions and data from other class (reusability)
+                 Types - Single, Multi-level, Multiple, Hierarchical and Hybrid inheritance 
+9. Keywords - Friend, Static, This

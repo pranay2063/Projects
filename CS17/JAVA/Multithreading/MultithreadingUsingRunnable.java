@@ -1,0 +1,29 @@
+import java.util.*;
+
+class MultithreadingInterface implements Runnable{
+    private static int counter = 0;
+    @Override
+    public void run(){
+        try{
+            System.out.println("Counter for Thread (Name,Id) ("+Thread.currentThread().getName()+","+Thread.currentThread().getId()+") now is "+counter);
+            ++counter;
+            System.out.println("Incrementing counter to "+counter);
+            Thread.sleep(5000);
+            System.out.println("Counter for Thread (Name,Id) ("+Thread.currentThread().getName()+","+Thread.currentThread().getId()+") now is "+counter);
+            ++counter;
+            System.out.println("Incrementing counter to "+counter);
+        }
+        catch (Exception e){
+            System.out.println("An exception was caught.");
+        }
+    }
+}
+
+class MultithreadingUsingRunnable {
+    public static void main(String[] args){
+        for(int i = 0; i < 5; ++i){
+            Thread obj = new Thread(new MultithreadingInterface(), "Thread"+i);
+            obj.start();
+        }
+    }
+}
